@@ -15,6 +15,8 @@ var util   = require('util'),
     currentSongNo = 0,
     songList;
 
+
+
 var app = module.exports = express.createServer();
 
 // Configuration
@@ -73,7 +75,7 @@ var startTime = new Date();
 var totalBytes = 0;
 
 
-var name = "TooTallNate's Pink Floyd Collection"
+var name = "Node-Icecast-Streamer"
 var metaint = 4096;
 // Array of HttpServerResponse objects that are listening clients.
 var clients = [];
@@ -245,3 +247,5 @@ if (!module.parent) {
   app.listen(3000);
   console.log("Express server listening on port %d", app.address().port)
 }
+
+//mediatags = [{"ID3v2":{"TALB":"Promo Only Mainstream Radio September 2008","TRCK":"6","TPE1":"Katy Perry","TCON":"12","PRIV":["PCDJ GAIN","PCDJ RATING","PCDJ CD CODE"],"TIT2":"Hot N Cold"},"ID3v1":{"Title":"Hot N Cold [PO Clean Edit]","Artist":"Katy Perry","Album":"Promo Only Mainstream Radio Se","Comment":"","Genre":"Other","Year":0,"Track":6},"fullpath":"/mnt/data/Music/Shared/Katy Perry/One of the Boys/Katy Perry - Hot N Cold [PO Clean Edit].mp3"},{"Â©nam":"Grapevine Fires","Â©ART":"Death Cab For Cutie","Â©wrt":"Benjamin Gibbard","Â©alb":"Narrow Stairs","Â©gen":"Alternative & Punk","trkn":"7 of 11","disk":"1 of 1","Â©day":"2008","cpil":"false","pgap":"0","tmpo":"0","Â©too":"iTunes 8.2.1, QuickTime 7.6.2","----[iTunSMPB]":"00000000 00000840 00000304 0000000000A8B8BC 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000","----[EncodingParams]":"hex 0x76657273 00000001 61636266 00000002 62726174 0003E800 73726371 0000007F\n \t\t\t63646376 00010606 ","----[iTunNORM]":"00000806 000009E7 000032DC 00003FAF 00033FC6 00027516 00008000 00008000 00002321 00007D55","----[iTunes_CDDB_IDs]":"11+C99902453154605CDFC831DEB6D68737+11240120","----[UFIDhttp://www.cddb.com/id3/taginfo1.html]":"3CD3N29Q159277411U26872617EBF956F428FCFDACD28940993EDP1","fullpath":"/mnt/data/Music/AJ's Music/Death Cab For Cutie/Narrow Stairs/07 Grapevine Fires.m4a"}];
